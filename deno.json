@@ -1,0 +1,23 @@
+{
+  "tasks": {
+    "testAll": "deno test --allow-all --unstable --fail-fast ./tests/abc.ts ./tests/alosaur.ts ./tests/aqua.ts ./tests/attain.ts ./tests/fresh.ts ./tests/oak.ts ./tests/opine.ts ./tests/pogo.ts",
+    "test": "deno test --allow-all --unstable --fail-fast ./tests/tests.ts"
+  },
+  "imports": {
+    "assert": "https://deno.land/std@0.214.0/assert/mod.ts"
+  },
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "deno.ns",
+      "deno.unstable"
+    ]
+  },
+  "test": {
+    "files": {
+      "include": [
+        "./tests/"
+      ]
+    }
+  }
+}
